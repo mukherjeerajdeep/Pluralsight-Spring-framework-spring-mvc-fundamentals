@@ -12,7 +12,7 @@ public class GreetingController {
     Configuration are imported, also in POM.xml we need to change the packaging
     type to "WAR" instead of "JAR" as this is going to be a Web-App with *.jsp
     */
-    @GetMapping("greeting")
+    @GetMapping("/greeting")
     public String greeting (Map<String, Object> model) {
         model.put("message", "Hello Bryan");
         return "greeting";
